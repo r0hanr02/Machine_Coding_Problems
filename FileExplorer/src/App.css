@@ -1,0 +1,61 @@
+/* Base tree container */
+.container {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #eaeaea;
+  margin-left: 20px;
+  position: relative;
+  padding-left: 10px;
+  border-left: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+/* Folder & file names */
+.node_name {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+/* Hover effect for better visibility */
+.node_name:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Plus-minus icons for expand/collapse */
+.icons {
+  color: #8ab4f8;
+  font-weight: bold;
+  margin-right: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+/* Slight scaling effect on hover */
+.icons:hover {
+  transform: scale(1.2);
+}
+
+/* Align icons and names neatly */
+.container > .icons,
+.container > .node_name {
+  vertical-align: middle;
+}
+
+/* Remove extra spacing for nested children */
+.container .container {
+  margin-top: 4px;
+}
+
+/* Optional: subtle connector line for nested branches */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -11px;
+  width: 10px;
+  height: 100%;
+  border-left: 1px dashed rgba(255, 255, 255, 0.08);
+}

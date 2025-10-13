@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "src",
+    "isFolder": true,
+    "children": [
+      {
+        "id": 2,
+        "name": "components",
+        "isFolder": true,
+        "children": [
+          {
+            "id": 3,
+            "name": "Header.jsx",
+            "isFolder": false,
+            "children": []
+          },
+          {
+            "id": 4,
+            "name": "Footer.jsx",
+            "isFolder": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "assets",
+        "isFolder": true,
+        "children": [
+          {
+            "id": 6,
+            "name": "logo.png",
+            "isFolder": false,
+            "children": []
+          },
+          {
+            "id": 7,
+            "name": "styles.css",
+            "isFolder": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "App.jsx",
+        "isFolder": false,
+        "children": []
+      },
+      {
+        "id": 9,
+        "name": "main.jsx",
+        "isFolder": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "public",
+    "isFolder": true,
+    "children": [
+      {
+        "id": 11,
+        "name": "index.html",
+        "isFolder": false,
+        "children": []
+      },
+      {
+        "id": 12,
+        "name": "favicon.ico",
+        "isFolder": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "package.json",
+    "isFolder": false,
+    "children": []
+  },
+  {
+    "id": 14,
+    "name": "vite.config.js",
+    "isFolder": false,
+    "children": []
+  }
+]
