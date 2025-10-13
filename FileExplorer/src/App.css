@@ -7,6 +7,9 @@
   position: relative;
   padding-left: 10px;
   border-left: 1px dashed rgba(255, 255, 255, 0.1);
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-direction: column; */
 }
 
 /* Folder & file names */
@@ -58,4 +61,8 @@
   width: 10px;
   height: 100%;
   border-left: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.foldericon {
+  width: 20px;
 }

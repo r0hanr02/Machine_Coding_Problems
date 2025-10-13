@@ -1,47 +1,45 @@
 import React, { useState } from "react";
-import { FaFolder, FaFolderOpen, FaFile } from "react-icons/fa";
 
-const File = ({ data }) => {
+const File = ({ data, addNoteToList }) => {
+  const [isExpandable, setIsExpandable] = useState({});
+  //   console.log(addNoteToList);
   return (
     <>
       {data.map((node) => (
-        <TreeNode key={node.id} node={node} />
+        <div className="container" key={node.id}>
+          {node.isFolder && (
+            <span
+              className="icons"
+              onClick={() =>
+                setIsExpandable((prev) => ({
+                  ...prev,
+                  [node.name]: !prev[node.name],
+                }))
+              }
+            >
+              {isExpandable?.[node.name] ? "-" : "+"}
+            </span>
+          )}
+
+          <h5 className="node_name">{node.name}</h5>
+          {node?.isFolder && (
+            <span onClick={() => addNoteToList(node.id)}>
+              <img className="foldericon" src="new-folder.png" alt="" />
+            </span>
+          )}
+          {isExpandable?.[node.name] && node?.children && (
+            <File
+              key={node.id}
+              data={node.children}
+              addNoteToList={addNoteToList}
+            />
+          )}
+        </div>
       ))}
     </>
   );
 };
 
-const TreeNode = ({ node }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleToggle = () => {
-    if (node.isFolder) setIsExpanded((prev) => !prev);
-  };
-
-  return (
-    <div className="container">
-      <div className="node" onClick={handleToggle}>
-        <span className="icons">
-          {node.isFolder ? (
-            isExpanded ? (
-              <FaFolderOpen className="folder-icon" />
-            ) : (
-              <FaFolder className="folder-icon" />
-            )
-          ) : (
-            <FaFile className="file-icon" />
-          )}
-        </span>
-        <h5 className="node_name">{node.name}</h5>
-      </div>
-
-      {isExpanded && node.children && (
-        <div className="children">
-          <File data={node.children} />
-        </div>
-      )}
-    </div>
-  );
-};
-
 export default File;
+
+// "-" : "+"
