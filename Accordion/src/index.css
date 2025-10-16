@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-color: gray;
+  margin: 2px 0px 10px 0px;
+  padding: 10px;
+  color: white;
+}
+.question-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.accordian-question {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.accordian-openansweroption {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.accordion-answer {
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+}

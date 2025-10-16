@@ -10,10 +10,7 @@ function App() {
 
   const addNoteToList = (parentId) => {
     const name = prompt("Enter Name Here");
-    console.log(parentId);
-
     const updateTree = (list) => {
-      console.log(list);
       return list.map((node) => {
         if (node.id === parentId) {
           return {
