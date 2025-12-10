@@ -1,0 +1,126 @@
+/* --- Todo Form Styles --- */
+
+.todo-container {
+  width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.todo-header {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.todo-input:focus {
+  border-color: #3b82f6;
+}
+
+.todo-btn {
+  width: 100%;
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.todo-btn:hover {
+  opacity: 0.85;
+}
+
+.todo-container {
+  width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  font-family: Arial, sans-serif;
+}
+
+.todo-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background: #ffffff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+}
+
+.todo-text {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-btn {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.todo-btn:hover {
+  opacity: 0.85;
+}
