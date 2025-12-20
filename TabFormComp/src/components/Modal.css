@@ -1,0 +1,89 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+/* Modal Box */
+.modal-content {
+  background: #ffffff;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: modalFade 0.25s ease-out;
+}
+
+/* Header */
+.modal-header h2 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+/* Sections */
+.modal-section {
+  margin-top: 14px;
+}
+
+.modal-section h4 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.modal-section p {
+  margin: 4px 0;
+  color: #333;
+}
+
+/* Hobby list */
+.hobby-list {
+  padding-left: 18px;
+  margin: 6px 0 0;
+}
+
+.hobby-list li {
+  margin-bottom: 4px;
+  color: #555;
+}
+
+/* Footer */
+.modal-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.close-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #1e40af;
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
