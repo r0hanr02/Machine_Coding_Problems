@@ -15,7 +15,7 @@ const Interests = ({ setTab }) => {
     setValue("");
   };
 
-  console.log(user);
+  // console.log(user);
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {

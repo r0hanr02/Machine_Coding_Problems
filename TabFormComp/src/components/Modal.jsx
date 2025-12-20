@@ -6,6 +6,10 @@ const Modal = ({ isModelOpen, setIsModelOpen }) => {
   const { user } = useUserContext();
 
   if (!isModelOpen) return null;
+  const handleReset = () => {
+    setIsModelOpen(false);
+    window.location.reload();
+  };
 
   return (
     <div className="modal-overlay" onClick={() => setIsModelOpen(false)}>
@@ -45,7 +49,7 @@ const Modal = ({ isModelOpen, setIsModelOpen }) => {
         </section>
 
         <footer className="modal-footer">
-          <button className="close-btn" onClick={() => setIsModelOpen(false)}>
+          <button className="close-btn" onClick={() => handleReset()}>
             Close
           </button>
         </footer>
